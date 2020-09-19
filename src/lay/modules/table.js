@@ -1486,6 +1486,7 @@ layui.define(['laytpl', 'laypage', 'layer', 'form', 'util'], function(exports){
       
       return $.extend({
         tr: tr //行元素
+        ,config:options //返回详细信息 
         ,data: table.clearCacheKey(data) //当前行数据
         ,del: function(){ //删除行数据
           table.cache[that.key][index] = [];
